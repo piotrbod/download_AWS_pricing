@@ -33,3 +33,21 @@ This simple script helps to download prices for all AWS services in CSV format.
 
 
 ## 7. When you open the zip you will see one CSV file per each AWS service
+
+## 8. You can also create one huge file if you need. To do it run
+--- ./fix_duplicate_columns.sh
+
+## 9. It will change the files so they don't have unnecessary comments at the top
+
+## 10. Upload all of those files to S3
+--- aws s3 cp --recursive allservices s3://your-s3-bucket/and-directory/
+
+## 11. Open AWS Console and go to Services -> Glue -> Crawlers and add a Crawler
+
+## 12. Point it to your S3 so it can crawl your data. It will create a table for you
+
+## 13. Open Athena service and query that table
+--- SELECT * FROM "your-database-name.your-table-name"
+
+## 14. You can download the result. It will be also available in your S3 soon.#
+
