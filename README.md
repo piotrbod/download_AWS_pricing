@@ -50,5 +50,5 @@ This simple script helps to download prices for all AWS services in CSV format.
 ## 13. Open Athena service and query that table
 --- SELECT * FROM "your-database-name.your-table-name"
 
-## 14. You can download the result. It will be also available in your S3 soon.#
+## 14. You can download the result. It will be also available in your S3 soon.
 
