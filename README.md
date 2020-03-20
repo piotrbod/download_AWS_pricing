@@ -34,7 +34,8 @@ This simple script helps to download prices for all AWS services in CSV format.
 
 ## 7. When you open the zip you will see one CSV file per each AWS service
 
-## 8. You can also create one huge file if you need. To do it run
+## 8. You can also create one huge file if you need. To do it run:
+--- chmod +x fix_duplicate_columns.sh
 --- ./fix_duplicate_columns.sh
 
 ## 9. It will change the files so they don't have unnecessary comments at the top
